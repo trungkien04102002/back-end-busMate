@@ -8,7 +8,7 @@ async function connect() {
         });
         console.log('Successfully connected to DB Busmate');
     } catch (error) {
-        console.log('Fail to connect to database');
+        console.log('Fail to connect to database', error, 'MongoString', process.env.MONGO_STRING);
     }
 }
 
